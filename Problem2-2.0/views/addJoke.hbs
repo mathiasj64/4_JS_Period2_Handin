@@ -1,0 +1,14 @@
+<h1>Add Joke</h1>
+
+
+<form method="POST">
+    <input type="text" name="newJoke">
+</form>
+
+<div>
+{{#each jokes}}
+  <p>{{@index}}. {{this}}</p>
+{{/each}}
+</div>
+
+<p><a href= "/index">Back to index</a></p>
